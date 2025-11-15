@@ -61,7 +61,7 @@ int choose_key_upper_bound(unsigned int N) {
 int main() {
     // TraceConfig provides pre-configured values such as N and seed
     TraceConfig config( std::string("batch-then-drain"));
-    config.traceDirectory = "../traces";
+    config.traceDirectory = "traces";
 
     for (auto seed: config.seeds) {  // currently, we are using one seed only.
         std::mt19937 rng(seed);   // create a random-number generator using "seed"
